@@ -1,6 +1,9 @@
 function detectVirus(input){
     input = input.toLowerCase(input);
-    return "The word 'virsu' was detected at position " + input.indexOf("virus");
+    if(input.indexOf("virus") > 0){
+        return "There is no 'virus' in the input.";
+    }
+    return "There is 'virus' in the input.";
 }
 
 var answer = prompt("Enter a string: ");
